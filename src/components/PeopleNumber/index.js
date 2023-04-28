@@ -1,8 +1,5 @@
-import {useState} from "react";
+const PeopleNumber = ({numPeople, setNumPeople}) => {
 
-const PeopleNumber = () => {
-
-    const [numPeople, setNumPeople] = useState('')
 
     return (
         <div className="form-group">

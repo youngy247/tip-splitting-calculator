@@ -1,8 +1,4 @@
-import {useState} from "react";
-
-const BillSection = () => {
-
-    const [billAmount, setBillAmount] = useState('')
+const BillSection = ({billAmount, setBillAmount}) => {
 
     return (
         <div>

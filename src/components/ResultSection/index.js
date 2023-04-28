@@ -1,10 +1,8 @@
-import {useState} from "react";
 import Button from "../Button";
 
-const ResultSection = () => {
+const ResultSection = ({tipAmount, totalAmount}) => {
 
-    const [tipAmount, setTipAmount] = useState(0)
-    const [totalAmount, setTotalAmount] = useState(0)
+
 
     return (
         <div className="d-flex flex-column justify-content-between">
