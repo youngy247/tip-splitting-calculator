@@ -45,7 +45,7 @@ const App = () => {
           <div className="col-sm-12 col-md-6">
             <BillSection billAmount={billAmount} setBillAmount={setBillAmount}/>
             <TipSelect tipPercentage={tipPercentage} setPercentage={setTipPercentage}/>
-            <PeopleNumber />
+            <PeopleNumber numPeople={numPeople} setNumPeople={setNumPeople} calculateTip={calculateTip}/>
           </div>
           <div className="col-sm-12 col-md-6">
             <ResultSection tipAmount={tipAmount} totalAmount={totalAmount} />

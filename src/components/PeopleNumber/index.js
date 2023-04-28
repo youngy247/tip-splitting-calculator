@@ -1,4 +1,9 @@
-const PeopleNumber = ({numPeople, setNumPeople}) => {
+const PeopleNumber = ({numPeople, setNumPeople, calculateTip}) => {
+
+    const handleNumPeopleChange = (e) => {
+        setNumPeople(e.target.value);
+        calculateTip();
+    }
 
 
     return (
@@ -9,7 +14,7 @@ const PeopleNumber = ({numPeople, setNumPeople}) => {
                 className="form-control"
                 id="numPeople"
                 value={numPeople}
-                onChange={(e) => setNumPeople(e.target.value)}
+                onChange={handleNumPeopleChange}
             />
         </div>
     )
