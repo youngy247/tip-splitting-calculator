@@ -48,7 +48,9 @@ const App = () => {
             <PeopleNumber numPeople={numPeople} setNumPeople={setNumPeople} calculateTip={calculateTip}/>
           </div>
           <div className="col-sm-12 col-md-6">
-            <ResultSection tipAmount={tipAmount} totalAmount={totalAmount} />
+            <ResultSection tipAmount={tipAmount} totalAmount={totalAmount}
+                           setTipAmount={setTipAmount} setTotalAmount={setTotalAmount}
+                           calculateTip={calculateTip}/>
           </div>
         </div>
       </div>
