@@ -1,6 +1,11 @@
+import Button from "../Button";
+
 const ResultSection = () => {
     return (
-        <div>ResultSection</div>
+        <div>
+            <div>Result Section</div>
+            <Button />
+        </div>
     )
 }
 

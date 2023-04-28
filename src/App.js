@@ -6,11 +6,17 @@ import TipSelect from "./components/TipSelect";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
+      <div className="row">
+      <div className="col-sm-12 col-md-6">
     <BillSection />
       <PeopleNumber />
-      <ResultSection />
       <TipSelect />
+      </div>
+      <div className="col-sm-12 col-md-6">
+      <ResultSection />
+      </div>
+      </div>
     </div>
   );
 }
