@@ -1,6 +1,6 @@
 import Button from "../Button";
 
-const ResultSection = ({tipAmount, totalAmount, setTotalAmount, setTipAmount, calculateTip}) => {
+const ResultSection = ({tipAmount, totalAmount, setTotalAmount, setTipAmount, calculateTip, reset}) => {
 
     const handleTipChange = (e) => {
         setTipAmount(e.target.value)
@@ -30,7 +30,7 @@ const ResultSection = ({tipAmount, totalAmount, setTotalAmount, setTipAmount, ca
                 </div>
             </div>
             <div className="align-bottom">
-                <Button />
+                <Button reset={reset}/>
             </div>
         </div>
 

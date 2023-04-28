@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 
-const TipSelect = ({tipPercentage, setPercentage}) => {
+const TipSelect = ({tipPercentage, setPercentage, calculateTip}) => {
 
     useEffect(() => {
         setPercentage(0);
     }, []);
+
+    const handleTipChange = (e) => {
+        setPercentage(e.taget.value);
+        calculateTip();
+    }
 
     const handleTipClick = (percentage) => {
         setPercentage(percentage);
@@ -49,9 +54,9 @@ const TipSelect = ({tipPercentage, setPercentage}) => {
                 <input
                     type="number"
                     className="col-4"
-                    onChange={(e) => setPercentage(e.target.value)}
                     value = {tipPercentage}
                     placeholder="Custom"
+                    onChange={handleTipChange}
                 />
             </div>
         </div>

@@ -1,7 +1,7 @@
-const Button = () => {
+const Button = ({reset}) => {
 
     return (
-        <button>Reset</button>
+        <button onClick={reset}>Reset</button>
     )
 }
 
