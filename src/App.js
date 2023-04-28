@@ -10,8 +10,8 @@ function App() {
       <div className="row">
       <div className="col-sm-12 col-md-6">
     <BillSection />
-      <PeopleNumber />
       <TipSelect />
+      <PeopleNumber />
       </div>
       <div className="col-sm-12 col-md-6">
       <ResultSection />

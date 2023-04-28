@@ -1,6 +1,9 @@
 const PeopleNumber = () => {
     return (
-        <div>PeopleNumber</div>
+        <div>
+            <div>PeopleNumber</div>
+            <input type='number'/>
+        </div>
     )
 }
 
