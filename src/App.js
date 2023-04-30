@@ -3,7 +3,7 @@ import BillSection from "./components/BillSection";
 import PeopleNumber from "./components/PeopleNumber";
 import ResultSection from "./components/ResultSection";
 import TipSelect from "./components/TipSelect";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const App = () => {
 
@@ -38,6 +38,10 @@ const App = () => {
       setTotalAmount(totalAmount.toFixed(2));
     }
   }
+
+  useEffect(() => {
+    calculateTip();
+  }, [billAmount, tipPercentage, numPeople]);
 
   return (
       <div className="App container">
