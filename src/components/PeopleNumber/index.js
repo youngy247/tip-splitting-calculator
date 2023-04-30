@@ -1,7 +1,12 @@
 const PeopleNumber = ({numPeople, setNumPeople, calculateTip}) => {
 
     const handleNumPeopleChange = (e) => {
-        setNumPeople(e.target.value);
+        const value = parseInt(e.target.value)
+        if (value < 1){
+            setNumPeople(1)
+        } else {
+            setNumPeople(value)
+        }
         calculateTip();
     }
 

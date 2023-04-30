@@ -9,7 +9,7 @@ const App = () => {
 
   const [billAmount, setBillAmount] = useState('')
   const [tipPercentage, setTipPercentage] = useState('');
-  const [numPeople, setNumPeople] = useState('');
+  const [numPeople, setNumPeople] = useState(1);
   const [tipAmount, setTipAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
 
