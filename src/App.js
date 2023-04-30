@@ -48,7 +48,8 @@ const App = () => {
   }, [billAmount, tipPercentage, numPeople]);
 
   return (
-      <div className="App container">
+      <div className="App container-fluid">
+        <h1>Tip Calculator</h1>
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <BillSection billAmount={billAmount} setBillAmount={setBillAmount} calculateTip={calculateTip}/>

@@ -2,6 +2,9 @@
   text-align: center;
   background-color: white;
   margin: 0 auto;
-  width: 30rem;
+  width: 55rem;
 }
 
+input {
+  text-align: right;
+}

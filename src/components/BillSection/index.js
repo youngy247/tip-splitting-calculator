@@ -6,8 +6,6 @@ const BillSection = ({billAmount, setBillAmount, calculateTip}) => {
     }
 
     return (
-        <div>
-            <h1>Tip Calculator</h1>
             <div className="form-group">
                 <label htmlFor="billAmount">Bill Amount</label>
                 <input
@@ -18,7 +16,6 @@ const BillSection = ({billAmount, setBillAmount, calculateTip}) => {
                     onChange={handleBillChange}
                 />
             </div>
-        </div>
 
     )
 }
