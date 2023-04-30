@@ -7,11 +7,12 @@ import {useEffect, useState} from "react";
 
 const App = () => {
 
-  const [billAmount, setBillAmount] = useState('')
+  const [billAmount, setBillAmount] = useState('');
   const [tipPercentage, setTipPercentage] = useState('');
   const [numPeople, setNumPeople] = useState(1);
   const [tipAmount, setTipAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
+  const [tipPerPerson, setTipPerPerson] = useState(0);
 
   const reset = () => {
     setBillAmount('');
@@ -19,7 +20,7 @@ const App = () => {
     setNumPeople('');
     setTipAmount(0);
     setTotalAmount(0);
-
+    setTipPerPerson(0)
   };
 
   const calculateTip = () => {
@@ -30,11 +31,14 @@ const App = () => {
 
     if (isNaN(bill) || isNaN(tip) || isNaN(people) || people === 0) {
       setTipAmount(0);
+      setTipPerPerson(0);
       setTotalAmount(0);
     } else {
       const tipAmount = bill * tip;
+      const tipPerPerson = tipAmount / people
       const totalAmount = (bill + tipAmount) / people;
       setTipAmount(tipAmount.toFixed(2));
+      setTipPerPerson(tipPerPerson.toFixed(2));
       setTotalAmount(totalAmount.toFixed(2));
     }
   }
@@ -53,6 +57,7 @@ const App = () => {
           </div>
           <div className="col-sm-12 col-md-6">
             <ResultSection tipAmount={tipAmount} totalAmount={totalAmount}
+                           tipPerPerson={tipPerPerson} setTipPerPerson={setTipPerPerson}
                            setTipAmount={setTipAmount} setTotalAmount={setTotalAmount}
                            calculateTip={calculateTip} reset={reset}/>
           </div>
