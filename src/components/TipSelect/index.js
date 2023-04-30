@@ -7,7 +7,7 @@ const TipSelect = ({tipPercentage, setPercentage, calculateTip}) => {
     }, []);
 
     const handleTipChange = (e) => {
-        setPercentage(e.taget.value);
+        setPercentage(e.target.value);
         calculateTip();
     }
 

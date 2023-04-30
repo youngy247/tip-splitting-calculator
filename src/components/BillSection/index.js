@@ -1,4 +1,9 @@
-const BillSection = ({billAmount, setBillAmount}) => {
+const BillSection = ({billAmount, setBillAmount, calculateTip}) => {
+
+    const handleBillChange = (e) => {
+        setBillAmount(e.target.value)
+        calculateTip()
+    }
 
     return (
         <div>
@@ -10,7 +15,7 @@ const BillSection = ({billAmount, setBillAmount}) => {
                     className="form-control"
                     id="billAmount"
                     value={billAmount}
-                    onChange={(e) => setBillAmount(e.target.value)}
+                    onChange={handleBillChange}
                 />
             </div>
         </div>
