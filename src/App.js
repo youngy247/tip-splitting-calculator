@@ -18,9 +18,9 @@ const App = () => {
     setBillAmount('');
     setTipPercentage('');
     setNumPeople('');
-    setTipAmount(0);
-    setTotalAmount(0);
-    setTipPerPerson(0)
+    setTipAmount('0.00');
+    setTotalAmount('0.00');
+    setTipPerPerson('0.00')
   }
 
   const calculateTip = () => {
