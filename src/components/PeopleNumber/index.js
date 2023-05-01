@@ -12,7 +12,7 @@ const PeopleNumber = ({numPeople, setNumPeople, calculateTip}) => {
 
 
     return (
-        <div className="form-group">
+        <div className="form-group py-3">
             <label htmlFor="numPeople">Number of People</label>
             <input
                 type="number"

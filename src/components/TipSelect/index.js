@@ -15,8 +15,8 @@ const TipSelect = ({ tipPercentage, setPercentage, calculateTip }) => {
     };
 
     return (
-        <div className="container-fluid">
-            <label htmlFor="TipSelectBox">Tip Select %</label>
+        <div className="container-fluid py-3">
+            <label htmlFor="TipSelectBox" className="py-2">Tip Select %</label>
 
             <div className="row row-cols-2 row-cols-md-3 g-3">
                 <div className="col">

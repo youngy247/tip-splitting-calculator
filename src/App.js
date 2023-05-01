@@ -10,9 +10,9 @@ const App = () => {
   const [billAmount, setBillAmount] = useState('');
   const [tipPercentage, setTipPercentage] = useState('');
   const [numPeople, setNumPeople] = useState(1);
-  const [tipAmount, setTipAmount] = useState(0);
-  const [totalAmount, setTotalAmount] = useState(0);
-  const [tipPerPerson, setTipPerPerson] = useState(0);
+  const [tipAmount, setTipAmount] = useState('0.00');
+  const [totalAmount, setTotalAmount] = useState('0.00');
+  const [tipPerPerson, setTipPerPerson] = useState('0.00');
 
   const reset = () => {
     setBillAmount('');
@@ -21,18 +21,17 @@ const App = () => {
     setTipAmount(0);
     setTotalAmount(0);
     setTipPerPerson(0)
-  };
+  }
 
   const calculateTip = () => {
     const bill = parseFloat(billAmount);
     const tip = parseFloat(tipPercentage) / 100;
     const people = parseInt(numPeople);
 
-
     if (isNaN(bill) || isNaN(tip) || isNaN(people) || people === 0) {
-      setTipAmount(0);
-      setTipPerPerson(0);
-      setTotalAmount(0);
+      setTipAmount('0.00');
+      setTipPerPerson('0.00');
+      setTotalAmount('0.00');
     } else {
       const tipAmount = bill * tip;
       const tipPerPerson = tipAmount / people
@@ -45,7 +44,7 @@ const App = () => {
 
   useEffect(() => {
     calculateTip();
-  }, [billAmount, tipPercentage, numPeople]);
+  }, [billAmount, tipPercentage, numPeople])
 
   return (
       <div className="App container-fluid">

@@ -6,8 +6,8 @@ const BillSection = ({billAmount, setBillAmount, calculateTip}) => {
     }
 
     return (
-            <div className="form-group py-4">
-                <label htmlFor="billAmount">Bill Amount</label>
+            <div className="form-group py-3">
+                <label htmlFor="billAmount" className="py-2">Bill Amount</label>
                 <input
                     type="number"
                     className="form-control"

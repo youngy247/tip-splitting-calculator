@@ -32,7 +32,7 @@ const ResultSection = ({tipAmount, totalAmount,
                 <div className="row">
                     <div className="col-6">Tip/person</div>
                     <div className="col-6"
-                         value={tipAmount}
+                         value={tipPerPerson}
                          onChange={handlePersonTipChange}>${tipPerPerson}</div>
                 </div>
                 <div className="row">
