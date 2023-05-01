@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   background-color: white;
   margin: 0 auto;
   width: 65rem;
@@ -16,6 +15,7 @@
   height: 100%;
     background-color: darkcyan;
 }
+
 
 .resultSection .row {
     padding: 1rem;
@@ -44,12 +44,22 @@
 
 h1 {
   padding: 1.5rem;
+    text-align: center;
 }
 
 input {
   text-align: right;
 }
 
-label {
-  text-align: left;
+.tip-select label {
+    text-align: left;
+}
+
+.tip-select button {
+    background-color: darkcyan;
+}
+
+.tip-select button:hover{
+    background-color: cyan;
+    color: black;
 }
