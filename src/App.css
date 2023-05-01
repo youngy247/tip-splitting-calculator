@@ -3,6 +3,16 @@
   background-color: white;
   margin: 0 auto;
   width: 65rem;
+  margin-top: 4rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.row {
+  margin: 0 2rem;
+}
+
+h1 {
+  padding: 1.5rem;
 }
 
 input {

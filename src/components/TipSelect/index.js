@@ -70,7 +70,7 @@ const TipSelect = ({ tipPercentage, setPercentage, calculateTip }) => {
                             id = "TipSelectBox"
                             type="number"
                             className="form-control"
-                            placeholder="Custom"
+                            placeholder="%"
                             value={tipPercentage}
                             onChange={handleTipChange}
                         />
