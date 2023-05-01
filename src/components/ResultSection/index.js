@@ -21,7 +21,7 @@ const ResultSection = ({tipAmount, totalAmount,
     }
 
     return (
-        <div className="d-flex flex-column justify-content-between">
+        <div className="resultSection d-flex flex-column justify-content-between">
             <div>
                 <div className="row">
                     <div className="col-6">Total Tip</div>
