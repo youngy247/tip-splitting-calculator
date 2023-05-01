@@ -2,9 +2,13 @@
   text-align: center;
   background-color: white;
   margin: 0 auto;
-  width: 55rem;
+  width: 65rem;
 }
 
 input {
   text-align: right;
+}
+
+label {
+  text-align: left;
 }

@@ -16,6 +16,8 @@ const TipSelect = ({ tipPercentage, setPercentage, calculateTip }) => {
 
     return (
         <div className="container-fluid">
+            <label htmlFor="TipSelectBox">Tip Select %</label>
+
             <div className="row row-cols-2 row-cols-md-3 g-3">
                 <div className="col">
                     <button
@@ -65,6 +67,7 @@ const TipSelect = ({ tipPercentage, setPercentage, calculateTip }) => {
                 <div className="col">
                     <div className="input-group">
                         <input
+                            id = "TipSelectBox"
                             type="number"
                             className="form-control"
                             placeholder="Custom"
