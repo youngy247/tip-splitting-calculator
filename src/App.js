@@ -8,7 +8,7 @@ import {useEffect, useState} from "react";
 const App = () => {
 
   const [billAmount, setBillAmount] = useState('');
-  const [tipPercentage, setTipPercentage] = useState('');
+  const [tipPercentage, setTipPercentage] = useState('0');
   const [numPeople, setNumPeople] = useState(1);
   const [tipAmount, setTipAmount] = useState('0.00');
   const [totalAmount, setTotalAmount] = useState('0.00');
@@ -16,8 +16,8 @@ const App = () => {
 
   const reset = () => {
     setBillAmount('');
-    setTipPercentage('');
-    setNumPeople('');
+    setTipPercentage('0');
+    setNumPeople('1');
     setTipAmount('0.00');
     setTotalAmount('0.00');
     setTipPerPerson('0.00')
