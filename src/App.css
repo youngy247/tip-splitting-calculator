@@ -12,8 +12,24 @@
 }
 
 .resultSection {
-  border: 1px solid red;
+    border-radius: 13px;
   height: 100%;
+    background-color: darkcyan;
+}
+
+.resultSection .row {
+    padding: 1rem;
+}
+
+.total {
+    font-size: 3rem;
+    color: cyan;
+}
+
+.total-label {
+    font-size: 1.25rem;
+    align-self: center;
+    color: white;
 }
 
 .resultSection button {

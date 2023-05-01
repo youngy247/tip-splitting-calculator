@@ -24,20 +24,20 @@ const ResultSection = ({tipAmount, totalAmount,
         <div className="resultSection d-flex flex-column justify-content-between">
             <div>
                 <div className="row">
-                    <div className="col-6">Total Tip</div>
-                    <div className="col-6"
+                    <div className="col-6 total-label">Total Tip</div>
+                    <div className="col-6 total"
                          value={tipAmount}
                          onChange={handleTipChange}>${tipAmount}</div>
                 </div>
                 <div className="row">
-                    <div className="col-6">Tip/person</div>
-                    <div className="col-6"
+                    <div className="col-6 total-label">Tip/person</div>
+                    <div className="col-6 total"
                          value={tipPerPerson}
                          onChange={handlePersonTipChange}>${tipPerPerson}</div>
                 </div>
                 <div className="row">
-                    <div className="col-6">Total/person</div>
-                    <div className="col-6"
+                    <div className="col-6 total-label">Total/person</div>
+                    <div className="col-6 total"
                          value={totalAmount}
                          onChange={handleTotalChange}>${totalAmount}
                     </div>
